@@ -1,0 +1,27 @@
+name = "bpnz-membership"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# One daily tick at 17:00 UTC (5–6am next day in NZ). All real scheduling
+# logic evaluates dates in Pacific/Auckland in code — see src/reminders/.
+[triggers]
+crons = ["0 17 * * *"]
+
+[vars]
+ORG_TIMEZONE = "Pacific/Auckland"
+# Keep DRY_RUN=1 until the domain + Resend are verified and one observed
+# real run looks right; then set to "0" (and set MAIL_FROM to the real sender).
+DRY_RUN = "1"
+MAIL_FROM = "BPNZ Governance <reminders@example.invalid>"
+
+# Secrets (set with `wrangler secret put <NAME>`), not stored here:
+#   RESEND_API_KEY        Resend API key
+#   COMMITTEE_RECIPIENTS  JSON: {"committee": ["..."], "key-holders": ["..."]}
+# Phase 4 adds: FIELD_ENCRYPTION_KEY, BLIND_INDEX_KEY, BTCPAY_API_KEY,
+#   BTCPAY_WEBHOOK_SECRET, UNSUBSCRIBE_SIGNING_KEY
+
+# Phase 4: D1 database for encrypted members/contacts
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "bpnz-membership"
+# database_id = "<created with: wrangler d1 create bpnz-membership>"

@@ -1,0 +1,94 @@
+{
+  "reminders": [
+    {
+      "id": "meeting-prep",
+      "rule": "monthly:first-tuesday",
+      "offset_days": -2,
+      "subject": "Committee meeting in 2 days — agenda prep due",
+      "body_template": "meeting-prep",
+      "audience": "committee"
+    },
+    {
+      "id": "wallet-check",
+      "rule": "quarterly:first-monday",
+      "months": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "subject": "Quarterly multisig wallet health check due",
+      "body_template": "wallet-check",
+      "audience": "key-holders"
+    },
+    {
+      "id": "newsletter-deadline",
+      "rule": "quarterly:first-monday",
+      "months": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "subject": "Quarterly newsletter drafting deadline",
+      "body_template": "newsletter-deadline",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-set-date",
+      "rule": "date:2026-08-05",
+      "subject": "AGM prep: Confirm AGM date, venue/platform, and returning officer",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-call-reports",
+      "rule": "date:2026-09-04",
+      "subject": "AGM prep: Call for officer reports and open committee nominations",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-draft-financials",
+      "rule": "date:2026-09-19",
+      "subject": "AGM prep: Draft annual financial statements",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-formal-notice",
+      "rule": "date:2026-10-20",
+      "subject": "AGM prep: Send formal AGM notice and agenda to all members",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-circulate-papers",
+      "rule": "date:2026-10-27",
+      "subject": "AGM prep: Circulate AGM papers: officer reports, financial statements, nominations",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-agm",
+      "rule": "date:2026-11-03",
+      "subject": "AGM prep: Hold the AGM",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-minutes",
+      "rule": "date:2026-11-10",
+      "subject": "AGM prep: Draft and circulate AGM minutes",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    },
+    {
+      "id": "agm-2026-file-return",
+      "rule": "date:2026-12-03",
+      "subject": "AGM prep: File annual return and financial statements with the Incorporated Societies Register",
+      "body_template": "agm-milestone",
+      "audience": "committee"
+    }
+  ]
+}
