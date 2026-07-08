@@ -34,7 +34,7 @@ AGM milestone entries are regenerated from the governance repo:
 | Name | Kind | Purpose |
 |---|---|---|
 | `ORG_TIMEZONE` | var | IANA timezone for rule evaluation (`Pacific/Auckland`) |
-| `MAIL_FROM` | var | Sender, e.g. `BPNZ Governance <reminders@mail.example.nz>` |
+| `MAIL_FROM` | var | Sender: `BPNZ Governance <reminders@mail.nzbitcoin.org>` |
 | `DRY_RUN` | var | `"1"` = log instead of sending. Keep on until verified. |
 | `TEST_RECIPIENT` | var/secret | If set, reroutes every send to this one address |
 | `RESEND_API_KEY` | secret | Resend API key |
