@@ -10,6 +10,11 @@ account_id = "6e7a00d27773931d4afdeaac9c76b89f"
 [triggers]
 crons = ["0 17 * * *"]
 
+# Persist Worker logs (incl. cron runs) so dry-run ticks can be reviewed in
+# the dashboard after the fact.
+[observability]
+enabled = true
+
 [vars]
 ORG_TIMEZONE = "Pacific/Auckland"
 # Keep DRY_RUN=1 until mail.nzbitcoin.org is verified in Resend and one
