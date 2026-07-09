@@ -1,6 +1,9 @@
 name = "bpnz-membership"
 main = "src/index.ts"
 compatibility_date = "2026-06-01"
+# Bitcoin Policy New Zealand account — pinned so deploys can never land in a
+# personal account by mistake.
+account_id = "6e7a00d27773931d4afdeaac9c76b89f"
 
 # One daily tick at 17:00 UTC (5–6am next day in NZ). All real scheduling
 # logic evaluates dates in Pacific/Auckland in code — see src/reminders/.
